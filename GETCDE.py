@@ -13,7 +13,7 @@ logging.basicConfig(level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %
 
 # === CHARGEMENT DES CLIENTS ===
 def charger_clients(fichier):
-    """Charge les informations des clients FTP depuis un fichier XML."""
+    """Charge les informations des clients FTP depuis le fichier XML."""
     try:
         tree = ET.parse(fichier)
         root = tree.getroot()
@@ -104,7 +104,7 @@ def traiter_fichiers_localement(client, chemin):
     else:
         logging.error(f"Chemin introuvable : {chemin}")
 
-# === TRANSFERT DES FICHIERS AVEC PYSFTP ===
+# === TRANSFERT DES FICHIERS AVEC PYSFTP (Dans ce cas PYSFTP est utilisé car il a fallu adapté avec la version de l'utilisateur) ===
 def transferer_fichiers(client):
     try:
         maj_couleur(client['nom'], "Connexion", "yellow")
@@ -250,3 +250,4 @@ if __name__ == "__main__":
     clients = charger_clients("param.xml")
     client_widgets = {}
     creer_interface()
+
