@@ -1,0 +1,40 @@
+<config>
+	<client>
+		<nom>CLIENT</nom>
+		<actif>1</actif>
+		<OS>WINDOWS</OS>
+		<FTP>
+			<protocol>SFTP</protocol>
+			<adresse>ADRESSE IP DU SFTP</adresse>
+			<port>22</port>
+			<user>utilisateur</user>
+			<password>mot de passe</password>
+			<dossier>\in</dossier>
+		</FTP>
+		<extension>.txt</extension>
+		<encodage>BINARY</encodage>
+		<Rep_reception>\\chemin\du\dossier\Recup_FTP</Rep_reception>
+		<Rep_sauvegarde>\\chemin\du\dossier\Archives</Rep_sauvegarde>
+		<Rep_travail>\\chemin\du\dossier\Travail</Rep_travail>
+		<Fic_NAV>DA</Fic_NAV>
+	</client>
+	<client>
+		<nom>CLIENT 2</nom>
+		<actif>1</actif>
+		<OS>WINDOWS</OS>
+		<FTP>
+			<protocol>SFTP</protocol>
+			<adresse>ADRESSE IP DU SFTP 2</adresse>
+			<port>22</port>
+			<user>utilisateur 2</user>
+			<password>mot de passe</password>
+			<dossier>\in</dossier>
+		</FTP>
+		<extension>.txt</extension>
+		<encodage>BINARY</encodage>
+		<Rep_reception>\\chemin\du\dossier\Recup_FTP</Rep_reception>
+		<Rep_sauvegarde>\\chemin\du\dossier\Archives</Rep_sauvegarde>
+		<Rep_travail>\\chemin\du\dossier\Travail</Rep_travail>
+		<Fic_NAV>DA</Fic_NAV>
+	</client>
+</config>
